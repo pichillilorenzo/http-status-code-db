@@ -1,0 +1,56 @@
+{
+  "name": "http-status-code-db",
+  "version": "1.0.0",
+  "description": "Known HTTP Header Database",
+  "author": {
+    "name": "Lorenzo Pichilli",
+    "email": "pichillilorenzo@gmail.com",
+    "url": "https://github.com/pichillilorenzo"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pichillilorenzo/http-status-code-db"
+  },
+  "homepage": "https://github.com/pichillilorenzo/http-status-code-db#readme",
+  "bugs": {
+    "url": "https://github.com/pichillilorenzo/http-status-code-db/issues"
+  },
+  "keywords": [
+    "http",
+    "header",
+    "http-header",
+    "http-headers",
+    "db",
+    "database",
+    "json"
+  ],
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "serve": "nodemon -L ./src/main.ts && npm run watch",
+    "build": "tsc --build && typedoc --out docs src/main.ts",
+    "clean": "tsc --build --clean",
+    "watch": "tsc --watch",
+    "build:all": "npm run start --prefix scripts && npm run build",
+    "postbuild": "minimize-js ./dist && minimize-json ./dist"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.3.3",
+    "@swc/helpers": "^0.4.11",
+    "minimize-js": "^1.3.0",
+    "minimize-json": "^1.0.0",
+    "nodemon": "^2.0.20",
+    "regenerator-runtime": "^0.13.9",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.15",
+    "typescript": "^4.8.4"
+  }
+}
