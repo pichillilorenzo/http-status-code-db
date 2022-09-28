@@ -1,7 +1,7 @@
 {
   "name": "http-status-code-db",
-  "version": "1.0.0",
-  "description": "Known HTTP Header Database",
+  "version": "1.0.1",
+  "description": "HTTP Status Code Database",
   "author": {
     "name": "Lorenzo Pichilli",
     "email": "pichillilorenzo@gmail.com",
@@ -18,9 +18,13 @@
   },
   "keywords": [
     "http",
-    "header",
-    "http-header",
-    "http-headers",
+    "status",
+    "http-status",
+    "status-code",
+    "http-status-code",
+    "http-status-codes",
+    "http-status-message",
+    "status-message",
     "db",
     "database",
     "json"
