@@ -26,7 +26,7 @@ function mergeDatabases(databases: HTTPStatusCodeDb[]): HTTPStatusCodeDb {
       } else {
         for (const property of Object.keys(target[key])) {
           if (mergedDb[key][property] == null) {
-            mergedDb[key][property] = target[key];
+            mergedDb[key][property] = target[key][property];
           } else {
             switch (property) {
               case 'examples':
