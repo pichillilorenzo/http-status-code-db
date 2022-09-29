@@ -1,6 +1,6 @@
 {
   "name": "http-status-code-db",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HTTP Status Code Database",
   "author": {
     "name": "Lorenzo Pichilli",
@@ -15,6 +15,10 @@
   "homepage": "https://github.com/pichillilorenzo/http-status-code-db#readme",
   "bugs": {
     "url": "https://github.com/pichillilorenzo/http-status-code-db/issues"
+  },
+  "funding": {
+    "type" : "individual",
+    "url" : "https://www.paypal.me/LorenzoPichilli"
   },
   "keywords": [
     "http",

@@ -15,6 +15,7 @@
 This is a large database of known HTTP Status Codes and information about them. It consists of a single, public JSON file and does not include any logic, allowing it to remain as un-opinionated as possible with an API. It aggregates data from the following sources:
 
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+- https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
 
 ## Installation
 
