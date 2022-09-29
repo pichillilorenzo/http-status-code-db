@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Fixed mdn source description field scraping
+
 ## 1.0.4
 
 - Fixed docs files

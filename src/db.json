@@ -118,7 +118,7 @@
 	"103": {
 		"code": 103,
 		"reasonPhrase": "Early Hints",
-		"description": "Experimental: This is an experimental technologyCheck the Browser compatibility table carefully before using this in production. The HTTP 103 Early Hints information response status code is primarily intended to be used with the Link header to allow the user agent to start preloading resources while the server is still preparing a response.",
+		"description": "The HTTP 103 Early Hints information response status code is primarily intended to be used with the Link header to allow the user agent to start preloading resources while the server is still preparing a response.",
 		"syntax": "103 Early Hints",
 		"experimental": "Experimental: This is an experimental technologyCheck the Browser compatibility table carefully before using this in production.",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/103",
@@ -636,7 +636,7 @@
 	"301": {
 		"code": 301,
 		"reasonPhrase": "Moved Permanently",
-		"description": "The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status response code indicates that the requested resource has been definitively moved to the URL given by the Location headers. A browser redirects to the new URL and search engines update their links to the resource. Note: Although the specification requires the method and the body to remain unchanged when the redirection is performed, not all user-agents meet this requirement. Use the 301 code only as a response for GET or HEAD methods and use the 308 Permanent Redirect for POST methods instead, as the method change is explicitly prohibited with this status.",
+		"description": "The HyperText Transfer Protocol (HTTP) 301 Moved Permanently redirect status response code indicates that the requested resource has been definitively moved to the URL given by the Location headers. A browser redirects to the new URL and search engines update their links to the resource.",
 		"note": "Note: Although the specification requires the method and the body to remain unchanged when the redirection is performed, not all user-agents meet this requirement. Use the 301 code only as a response for GET or HEAD methods and use the 308 Permanent Redirect for POST methods instead, as the method change is explicitly prohibited with this status.",
 		"syntax": "301 Moved Permanently",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301",
@@ -868,7 +868,7 @@
 	"304": {
 		"code": 304,
 		"reasonPhrase": "Not Modified",
-		"description": "The HTTP 304 Not Modified client redirection response code indicates that there is no need to retransmit the requested resources. It is an implicit redirection to a cached resource. This happens when the request method is a safe method, such as GET or HEAD, or when the request is conditional and uses an If-None-Match or an If-Modified-Since header. The equivalent 200 OK response would have included the headers Cache-Control, Content-Location, Date, ETag, Expires, and Vary. Note: Many developer tools' network panels of browsers create extraneous requests leading to 304 responses, so that access to the local cache is visible to developers.",
+		"description": "The HTTP 304 Not Modified client redirection response code indicates that there is no need to retransmit the requested resources. It is an implicit redirection to a cached resource. This happens when the request method is a safe method, such as GET or HEAD, or when the request is conditional and uses an If-None-Match or an If-Modified-Since header. The equivalent 200 OK response would have included the headers Cache-Control, Content-Location, Date, ETag, Expires, and Vary.",
 		"note": "Note: Many developer tools' network panels of browsers create extraneous requests leading to 304 responses, so that access to the local cache is visible to developers.",
 		"syntax": "304 Not Modified",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304",
@@ -1057,7 +1057,7 @@
 	"308": {
 		"code": 308,
 		"reasonPhrase": "Permanent Redirect",
-		"description": "The HyperText Transfer Protocol (HTTP) 308 Permanent Redirect redirect status response code indicates that the resource requested has been definitively moved to the URL given by the Location headers. A browser redirects to this page and search engines update their links to the resource (in 'SEO-speak', it is said that the 'link-juice' is sent to the new URL). The request method and the body will not be altered, whereas 301 may incorrectly sometimes be changed to a GET method. Note: Some Web applications may use the 308 Permanent Redirect in a non-standard way and for other purposes. For example, Google Drive uses a 308 Resume Incomplete response to indicate to the client when an incomplete upload stalled. (See Perform a resumable download on Google Drive documentation.)",
+		"description": "The HyperText Transfer Protocol (HTTP) 308 Permanent Redirect redirect status response code indicates that the resource requested has been definitively moved to the URL given by the Location headers. A browser redirects to this page and search engines update their links to the resource (in 'SEO-speak', it is said that the 'link-juice' is sent to the new URL). The request method and the body will not be altered, whereas 301 may incorrectly sometimes be changed to a GET method.",
 		"note": "Note: Some Web applications may use the 308 Permanent Redirect in a non-standard way and for other purposes. For example, Google Drive uses a 308 Resume Incomplete response to indicate to the client when an incomplete upload stalled. (See Perform a resumable download on Google Drive documentation.)",
 		"syntax": "308 Permanent Redirect",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308",
@@ -1135,7 +1135,7 @@
 	"400": {
 		"code": 400,
 		"reasonPhrase": "Bad Request",
-		"description": "The HyperText Transfer Protocol (HTTP) 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error (for example, malformed request syntax, invalid request message framing, or deceptive request routing). Warning: The client should not repeat this request without modification.",
+		"description": "The HyperText Transfer Protocol (HTTP) 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error (for example, malformed request syntax, invalid request message framing, or deceptive request routing).",
 		"syntax": "400 Bad Request",
 		"warning": "Warning: The client should not repeat this request without modification.",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
@@ -1234,7 +1234,7 @@
 	"402": {
 		"code": 402,
 		"reasonPhrase": "Payment Required",
-		"description": "Experimental: This is an experimental technologyCheck the Browser compatibility table carefully before using this in production. The HTTP 402 Payment Required is a nonstandard response status code that is reserved for future use. This status code was created to enable digital cash or (micro) payment systems and would indicate that the requested content is not available until the client makes a payment. Sometimes, this status code indicates that the request cannot be processed until the client makes a payment. However, no standard use convention exists and different entities use it in different contexts.",
+		"description": "The HTTP 402 Payment Required is a nonstandard response status code that is reserved for future use. This status code was created to enable digital cash or (micro) payment systems and would indicate that the requested content is not available until the client makes a payment. Sometimes, this status code indicates that the request cannot be processed until the client makes a payment. However, no standard use convention exists and different entities use it in different contexts.",
 		"syntax": "402 Payment Required",
 		"experimental": "Experimental: This is an experimental technologyCheck the Browser compatibility table carefully before using this in production.",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402",
@@ -1585,7 +1585,7 @@
 	"408": {
 		"code": 408,
 		"reasonPhrase": "Request Timeout",
-		"description": "The HyperText Transfer Protocol (HTTP) 408 Request Timeout response status code means that the server would like to shut down this unused connection. It is sent on an idle connection by some servers, even without any previous request by the client. A server should send the \"close\" Connection header field in the response, since 408 implies that the server has decided to close the connection rather than continue waiting. This response is used much more since some browsers, like Chrome, Firefox 27+, and IE9, use HTTP pre-connection mechanisms to speed up surfing. Note: some servers merely shut down the connection without sending this message.",
+		"description": "The HyperText Transfer Protocol (HTTP) 408 Request Timeout response status code means that the server would like to shut down this unused connection. It is sent on an idle connection by some servers, even without any previous request by the client. A server should send the \"close\" Connection header field in the response, since 408 implies that the server has decided to close the connection rather than continue waiting. This response is used much more since some browsers, like Chrome, Firefox 27+, and IE9, use HTTP pre-connection mechanisms to speed up surfing.",
 		"note": "Note: some servers merely shut down the connection without sending this message.",
 		"syntax": "408 Request Timeout",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408",
@@ -1684,7 +1684,7 @@
 	"410": {
 		"code": 410,
 		"reasonPhrase": "Gone",
-		"description": "The HyperText Transfer Protocol (HTTP) 410 Gone client error response code indicates that access to the target resource is no longer available at the origin server and that this condition is likely to be permanent. If you don't know whether this condition is temporary or permanent, a 404 status code should be used instead. Note: A 410 response is cacheable by default.",
+		"description": "The HyperText Transfer Protocol (HTTP) 410 Gone client error response code indicates that access to the target resource is no longer available at the origin server and that this condition is likely to be permanent. If you don't know whether this condition is temporary or permanent, a 404 status code should be used instead.",
 		"note": "Note: A 410 response is cacheable by default.",
 		"syntax": "410 Gone",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/410",
@@ -1762,7 +1762,7 @@
 	"411": {
 		"code": 411,
 		"reasonPhrase": "Length Required",
-		"description": "The HyperText Transfer Protocol (HTTP) 411 Length Required client error response code indicates that the server refuses to accept the request without a defined Content-Length header. Note: by specification, when sending data in a series of chunks, the Content-Length header is omitted and at the beginning of each chunk you need to add the length of the current chunk in hexadecimal format. See Transfer-Encoding for more details.",
+		"description": "The HyperText Transfer Protocol (HTTP) 411 Length Required client error response code indicates that the server refuses to accept the request without a defined Content-Length header.",
 		"note": "Note: by specification, when sending data in a series of chunks, the Content-Length header is omitted and at the beginning of each chunk you need to add the length of the current chunk in hexadecimal format. See Transfer-Encoding for more details.",
 		"syntax": "411 Length Required",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/411",
@@ -2117,7 +2117,7 @@
 	"422": {
 		"code": 422,
 		"reasonPhrase": "Unprocessable Entity",
-		"description": "The HyperText Transfer Protocol (HTTP) 422 Unprocessable Entity response status code indicates that the server understands the content type of the request entity, and the syntax of the request entity is correct, but it was unable to process the contained instructions. Warning: The client should not repeat this request without modification.",
+		"description": "The HyperText Transfer Protocol (HTTP) 422 Unprocessable Entity response status code indicates that the server understands the content type of the request entity, and the syntax of the request entity is correct, but it was unable to process the contained instructions.",
 		"syntax": "422 Unprocessable Entity",
 		"warning": "Warning: The client should not repeat this request without modification.",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
@@ -2480,7 +2480,7 @@
 	"501": {
 		"code": 501,
 		"reasonPhrase": "Not Implemented",
-		"description": "The HyperText Transfer Protocol (HTTP) 501 Not Implemented server error response code means that the server does not support the functionality required to fulfill the request. This status can also send a Retry-After header, telling the requester when to check back to see if the functionality is supported by then. 501 is the appropriate response when the server does not recognize the request method and is incapable of supporting it for any resource. The only methods that servers are required to support (and therefore that must not return 501) are GET and HEAD. If the server does recognize the method, but intentionally does not support it, the appropriate response is 405 Method Not Allowed. Note:",
+		"description": "The HyperText Transfer Protocol (HTTP) 501 Not Implemented server error response code means that the server does not support the functionality required to fulfill the request. This status can also send a Retry-After header, telling the requester when to check back to see if the functionality is supported by then. 501 is the appropriate response when the server does not recognize the request method and is incapable of supporting it for any resource. The only methods that servers are required to support (and therefore that must not return 501) are GET and HEAD. If the server does recognize the method, but intentionally does not support it, the appropriate response is 405 Method Not Allowed.",
 		"note": "Note: A 501 error is not something you can fix, but requires a fix by the web server you are trying to access. A 501 response is cacheable by default; that is, unless caching headers instruct otherwise.",
 		"syntax": "501 Not Implemented",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501",
@@ -2558,7 +2558,7 @@
 	"502": {
 		"code": 502,
 		"reasonPhrase": "Bad Gateway",
-		"description": "The HyperText Transfer Protocol (HTTP) 502 Bad Gateway server error response code indicates that the server, while acting as a gateway or proxy, received an invalid response from the upstream server. Note: A Gateway might refer to different things in networking and a 502 error is usually not something you can fix, but requires a fix by the web server or the proxies you are trying to get access through.",
+		"description": "The HyperText Transfer Protocol (HTTP) 502 Bad Gateway server error response code indicates that the server, while acting as a gateway or proxy, received an invalid response from the upstream server.",
 		"note": "Note: A Gateway might refer to different things in networking and a 502 error is usually not something you can fix, but requires a fix by the web server or the proxies you are trying to get access through.",
 		"syntax": "502 Bad Gateway",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
@@ -2636,7 +2636,7 @@
 	"503": {
 		"code": 503,
 		"reasonPhrase": "Service Unavailable",
-		"description": "The HyperText Transfer Protocol (HTTP) 503 Service Unavailable server error response code indicates that the server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. This response should be used for temporary conditions and the Retry-After HTTP header should, if possible, contain the estimated time for the recovery of the service. Note: together with this response, a user-friendly page explaining the problem should be sent. Caching-related headers that are sent along with this response should be taken care of, as a 503 status is often a temporary condition and responses shouldn't usually be cached.",
+		"description": "The HyperText Transfer Protocol (HTTP) 503 Service Unavailable server error response code indicates that the server is not ready to handle the request. Common causes are a server that is down for maintenance or that is overloaded. This response should be used for temporary conditions and the Retry-After HTTP header should, if possible, contain the estimated time for the recovery of the service. Caching-related headers that are sent along with this response should be taken care of, as a 503 status is often a temporary condition and responses shouldn't usually be cached.",
 		"note": "Note: together with this response, a user-friendly page explaining the problem should be sent.",
 		"syntax": "503 Service Unavailable",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503",
@@ -2714,7 +2714,7 @@
 	"504": {
 		"code": 504,
 		"reasonPhrase": "Gateway Timeout",
-		"description": "The HyperText Transfer Protocol (HTTP) 504 Gateway Timeout server error response code indicates that the server, while acting as a gateway or proxy, did not get a response in time from the upstream server that it needed in order to complete the request. Note: A Gateway might refer to different things in networking and a 504 error is usually not something you can fix, but requires a fix by the web server or the proxies you are trying to get access through.",
+		"description": "The HyperText Transfer Protocol (HTTP) 504 Gateway Timeout server error response code indicates that the server, while acting as a gateway or proxy, did not get a response in time from the upstream server that it needed in order to complete the request.",
 		"note": "Note: A Gateway might refer to different things in networking and a 504 error is usually not something you can fix, but requires a fix by the web server or the proxies you are trying to get access through.",
 		"syntax": "504 Gateway Timeout",
 		"link": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504",

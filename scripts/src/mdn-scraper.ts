@@ -33,7 +33,7 @@ export const run = async () => {
       const reasonPhrase = name.split(" ").slice(1).join(" ").trim();
 
       // @ts-ignore
-      const description = [...document.querySelector('.main-page-content .section-content').querySelectorAll('p')]
+      const description = [...document.querySelector('.main-page-content .section-content').querySelectorAll(':scope > p')]
         .map((p: HTMLParagraphElement) => p.textContent?.trim() ?? '').join('\n');
       const note = document.querySelector('.main-page-content .section-content')?.querySelector('.notecard.note')?.textContent?.trim();
 
