@@ -16,10 +16,10 @@ export const run = async () => {
     const httpStatusCodeDb: HTTPStatusCodeDb = {};
 
     // @ts-ignore
-    const rows = [...document.querySelectorAll('#table-http-status-codes-1 tbody tr')];
+    const rows = [...document.querySelectorAll('#table-http-status-codes-1 tbody tr')] as HTMLTableRowElement[];
     for (const row of rows) {
-      const code = parseInt(row.querySelectorAll('td')[0].textContent.trim());
-      const reasonPhrase = row.querySelectorAll('td')[1].textContent.replace(/(\(\w+\)|\(|\))/g, '').trim();
+      const code = parseInt(row.querySelectorAll('td')[0]!.textContent!.trim());
+      const reasonPhrase = row.querySelectorAll('td')[1]!.textContent!.replace(/(\(\w+\)|\(|\))/g, '').trim();
 
       if (reasonPhrase.toLowerCase() === 'unassigned') {continue;}
 
