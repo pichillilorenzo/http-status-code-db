@@ -38,7 +38,7 @@ https://cdn.jsdelivr.net/gh/pichillilorenzo/http-status-code-db@main/dist/db.jso
 ```js
 import db from 'http-status-code-db';
 // .. or
-const db = require('http-status-code-db');
+const db = require('http-status-code-db').default;
 
 const statusCodeInfo = db['200']; // An instance of HTTPStatusCode
 console.log(statusCodeInfo.syntax); // 200 OK
